@@ -66,7 +66,47 @@ namespace Speiseplan
                     MessageBox.Show("Die Nachspeise wurde gespeichert!");
                     Form1.f1.einlesenNachspeise();
                 }
+
+                Form1.f1.vorspeise = false;
+                Form1.f1.hauptspeise = false;
+                Form1.f1.nachspeise = false;
             }
+            else //bearbeiten
+            {
+                if (Form1.f1.vorspeise == true)
+                {
+                    lvItem = Form1.f1.lvVorspeise.SelectedItems[0];
+                    index = lvItem.Index;
+                    vorspeiseId = Convert.ToInt32(Form1.f1.lvVorspeise.Items[index].SubItems[0].Text.ToString());
+
+                    sql = "UPDATE Vorspeise set Vorspeise = '" + txtSpeise.Text + "' WHERE VorspeisenID = " + vorspeiseId;
+                    MessageBox.Show(sql);
+                }
+
+                else if (Form1.f1.hauptspeise == true)
+                {
+                    lvItem = Form1.f1.lvHauptspeise.SelectedItems[0];
+                    index = lvItem.Index;
+                    hauptspeiseId = Convert.ToInt32(Form1.f1.lvHauptspeise.Items[index].SubItems[0].Text.ToString());
+
+                    sql = "UPDATE Hauptspeise set Hauptspeise = '" + txtSpeise.Text + "' WHERE HauptspeiseID = " + hauptspeiseId;
+                    //MessageBox.Show(sql);
+                }
+
+                else if (Form1.f1.nachspeise == true)
+                {
+                    lvItem = Form1.f1.lvNachspeise.SelectedItems[0];
+                    index = lvItem.Index;
+                    nachspeiseId = Convert.ToInt32(Form1.f1.lvNachspeise.Items[index].SubItems[0].Text.ToString());
+
+                    sql = "UPDATE Nachspeise set Nachspeise = '" + txtSpeise.Text + "' WHERE NachpseiseID = " + nachspeiseId;
+                    //MessageBox.Show(sql);
+                }
+
+            }
+            db.Ausfuehren(sql);
+            this.Close();
+        
         }
     }
 }
