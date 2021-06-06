@@ -39,11 +39,7 @@ namespace Speiseplan
 
         private void btnSpeichern_Click(object sender, EventArgs e)
         {
-            if (txtID.Text.Equals("") || txtSpeise.Text.Equals("") || txtPreis.Text.Equals(""))
-            {
-                MessageBox.Show("Bitte füllen Sie alle Felder aus!");
-                return;
-            }
+           
 
             if (this.Text.Equals("Speise anlegen"))
             {
