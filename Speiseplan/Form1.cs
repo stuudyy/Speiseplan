@@ -39,7 +39,7 @@ namespace Speiseplan
             {
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
-                
+
 
                 lvVorspeise.Items.Add(lvItem);
             }
@@ -55,7 +55,7 @@ namespace Speiseplan
             {
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
-                
+
 
                 lvHauptspeise.Items.Add(lvItem);
             }
@@ -71,7 +71,7 @@ namespace Speiseplan
             {
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
-                
+
 
                 lvNachspeise.Items.Add(lvItem);
             }
@@ -108,15 +108,25 @@ namespace Speiseplan
                     MessageBox.Show("Wählen Sie bitte eine Speise aus!");
                     return;
                 }
-                lvItem =  lvVorspeise.SelectedItems[0];
+                lvItem = lvVorspeise.SelectedItems[0];
                 Form2 f2 = new Form2();
                 f2.Text = "Speise ändern";
                 f2.txtID.Text = lvItem.SubItems[0].Text;
                 f2.txtSpeise.Text = lvItem.SubItems[1].Text;
-                f2.txtPreis.Text = lvItem.SubItems[2].Text;
+
 
                 f2.ShowDialog();
                 einlesenVorspeise();
             }
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
+
+
+

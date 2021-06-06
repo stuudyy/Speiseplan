@@ -39,13 +39,13 @@ namespace Speiseplan
 
         private void btnSpeichern_Click(object sender, EventArgs e)
         {
-           
+
 
             if (this.Text.Equals("Speise anlegen"))
             {
                 if (Form1.f1.vorspeise == true)
                 {
-                    sql = "INSERT INTO Vorspeise (VID, Vorspeise, Preis) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text + "', '" + Convert.ToString(txtPreis.Text) + "');";
+                    sql = "INSERT INTO Vorspeise (VID, Vorspeise, Preis) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text +  "');";
                     //MessageBox.Show(sql);
                     MessageBox.Show("Die Vorspeise wurde gespeichert!");
                     Form1.f1.einlesenVorspeise();
@@ -53,7 +53,7 @@ namespace Speiseplan
                 }
                 else if (Form1.f1.hauptspeise == true)
                 {
-                    sql = "INSERT INTO Hauptspeise (HID, Hauptspeise, Preis) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text + "', '" + Convert.ToString(txtPreis.Text) + "');";
+                    sql = "INSERT INTO Hauptspeise (HID, Hauptspeise, Preis) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text + "');";
                     //MessageBox.Show(sql);
                     MessageBox.Show("Die Hauptspeise wurde gespeichert!");
                     Form1.f1.einlesenHauptspeise();
@@ -61,11 +61,14 @@ namespace Speiseplan
 
                 else if (Form1.f1.nachspeise == true)
                 {
-                    sql = "INSERT INTO Nachspeise (NID, Nachspeise, Preis) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text + "', '" + Convert.ToString(txtPreis.Text) + "');";
+                    sql = "INSERT INTO Nachspeise (NID, Nachspeise, Preis) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text + "');";
                     //MessageBox.Show(sql);
                     MessageBox.Show("Die Nachspeise wurde gespeichert!");
                     Form1.f1.einlesenNachspeise();
                 }
             }
+        }
     }
 }
+            
+

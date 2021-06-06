@@ -40,9 +40,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 60);
+            this.label2.Location = new System.Drawing.Point(37, 49);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 25);
+            this.label2.Size = new System.Drawing.Size(26, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "ID";
             // 
@@ -50,32 +51,36 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(49, 103);
+            this.label3.Location = new System.Drawing.Point(37, 84);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 25);
+            this.label3.Size = new System.Drawing.Size(58, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Speise";
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(172, 64);
+            this.txtID.Location = new System.Drawing.Point(129, 52);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(79, 22);
+            this.txtID.Size = new System.Drawing.Size(60, 20);
             this.txtID.TabIndex = 3;
             // 
             // txtSpeise
             // 
-            this.txtSpeise.Location = new System.Drawing.Point(172, 107);
+            this.txtSpeise.Location = new System.Drawing.Point(129, 87);
+            this.txtSpeise.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSpeise.Name = "txtSpeise";
-            this.txtSpeise.Size = new System.Drawing.Size(219, 22);
+            this.txtSpeise.Size = new System.Drawing.Size(165, 20);
             this.txtSpeise.TabIndex = 4;
             // 
             // btnAbbrechen
             // 
             this.btnAbbrechen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbbrechen.Location = new System.Drawing.Point(54, 157);
+            this.btnAbbrechen.Location = new System.Drawing.Point(40, 128);
+            this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAbbrechen.Name = "btnAbbrechen";
-            this.btnAbbrechen.Size = new System.Drawing.Size(155, 51);
+            this.btnAbbrechen.Size = new System.Drawing.Size(116, 41);
             this.btnAbbrechen.TabIndex = 5;
             this.btnAbbrechen.Text = "Abbrechen";
             this.btnAbbrechen.UseVisualStyleBackColor = true;
@@ -83,9 +88,10 @@
             // btnSpeichern
             // 
             this.btnSpeichern.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSpeichern.Location = new System.Drawing.Point(236, 157);
+            this.btnSpeichern.Location = new System.Drawing.Point(177, 128);
+            this.btnSpeichern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSpeichern.Name = "btnSpeichern";
-            this.btnSpeichern.Size = new System.Drawing.Size(155, 51);
+            this.btnSpeichern.Size = new System.Drawing.Size(116, 41);
             this.btnSpeichern.TabIndex = 6;
             this.btnSpeichern.Text = "Speichern";
             this.btnSpeichern.UseVisualStyleBackColor = true;
@@ -93,15 +99,16 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(460, 264);
+            this.ClientSize = new System.Drawing.Size(345, 214);
             this.Controls.Add(this.btnSpeichern);
             this.Controls.Add(this.btnAbbrechen);
             this.Controls.Add(this.txtSpeise);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -114,9 +121,9 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtSpeise;
-        private System.Windows.Forms.Button btnAbbrechen;
-        private System.Windows.Forms.Button btnSpeichern;
+        internal System.Windows.Forms.TextBox txtID;
+        internal System.Windows.Forms.TextBox txtSpeise;
+        internal System.Windows.Forms.Button btnAbbrechen;
+        internal System.Windows.Forms.Button btnSpeichern;
     }
 }
