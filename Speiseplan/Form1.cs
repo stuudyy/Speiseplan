@@ -26,7 +26,9 @@ namespace Speiseplan
         string sql;
         internal OleDbCommand cmd;
         internal string cn;
-
+        internal bool vorspeise = false;
+        internal bool hauptspeise = false;
+        internal bool nachspeise = false;
 
         internal void einlesenVorspeise()
         {
@@ -92,7 +94,29 @@ namespace Speiseplan
 
         private void anlegenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form2 f2 = new Form2();
+            f2.Text = "Speise anlegen";
+            f2.ShowDialog();
         }
+
+        private void bearbeitenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Form1.f1.vorspeise == true)
+            {
+                if (lvVorspeise.SelectedItems.Count == 0)
+                {
+                    MessageBox.Show("Wählen Sie bitte eine Speise aus!");
+                    return;
+                }
+                lvItem =  lvVorspeise.SelectedItems[0];
+                Form2 f2 = new Form2();
+                f2.Text = "Speise ändern";
+                f2.txtID.Text = lvItem.SubItems[0].Text;
+                f2.txtSpeise.Text = lvItem.SubItems[1].Text;
+                f2.txtPreis.Text = lvItem.SubItems[2].Text;
+
+                f2.ShowDialog();
+                einlesenVorspeise();
+            }
     }
 }
