@@ -26,5 +26,10 @@ namespace Speiseplan
         {
 
         }
+
+        private void anlegenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
