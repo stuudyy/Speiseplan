@@ -29,13 +29,10 @@
         private void InitializeComponent()
         {
             this.lvVorspeise = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvHauptspeise = new System.Windows.Forms.ListView();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvNachspeise = new System.Windows.Forms.ListView();
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
@@ -53,7 +50,6 @@
             // lvVorspeise
             // 
             this.lvVorspeise.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
             this.columnIDVorspeise,
             this.columnVorspeise});
             this.lvVorspeise.HideSelection = false;
@@ -65,14 +61,9 @@
             this.lvVorspeise.UseCompatibleStateImageBehavior = false;
             this.lvVorspeise.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Width = 0;
-            // 
             // lvHauptspeise
             // 
             this.lvHauptspeise.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
             this.lvHauptspeise.HideSelection = false;
@@ -83,10 +74,6 @@
             this.lvHauptspeise.TabIndex = 1;
             this.lvHauptspeise.UseCompatibleStateImageBehavior = false;
             this.lvHauptspeise.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Width = 0;
             // 
             // columnHeader3
             // 
@@ -100,7 +87,6 @@
             // lvNachspeise
             // 
             this.lvNachspeise.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader8,
             this.columnHeader9,
             this.columnHeader10});
             this.lvNachspeise.HideSelection = false;
@@ -111,10 +97,6 @@
             this.lvNachspeise.TabIndex = 2;
             this.lvNachspeise.UseCompatibleStateImageBehavior = false;
             this.lvNachspeise.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Width = 0;
             // 
             // columnHeader9
             // 
@@ -227,13 +209,10 @@
         #endregion
 
         private System.Windows.Forms.ListView lvVorspeise;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ListView lvHauptspeise;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ListView lvNachspeise;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.Label label1;
