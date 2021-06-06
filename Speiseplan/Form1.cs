@@ -37,8 +37,6 @@ namespace Speiseplan
             {
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
-                
-
                 lvVorspeise.Items.Add(lvItem);
             }
             lvVorspeise.FullRowSelect = true;
@@ -53,8 +51,6 @@ namespace Speiseplan
             {
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
-                
-
                 lvHauptspeise.Items.Add(lvItem);
             }
             lvHauptspeise.FullRowSelect = true;
@@ -69,8 +65,6 @@ namespace Speiseplan
             {
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
-                
-
                 lvNachspeise.Items.Add(lvItem);
             }
             lvNachspeise.FullRowSelect = true;
@@ -91,6 +85,11 @@ namespace Speiseplan
         }
 
         private void anlegenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
