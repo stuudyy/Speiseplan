@@ -37,7 +37,7 @@ namespace Speiseplan
             {
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
-                //lvItem.SubItems.Add(dr[2].ToString());
+                lvItem.SubItems.Add(dr[2].ToString());
 
                 lvVorspeise.Items.Add(lvItem);
             }
@@ -53,7 +53,7 @@ namespace Speiseplan
             {
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
-                lvItem.SubItems.Add(dr[2].ToString());
+                
 
                 lvHauptspeise.Items.Add(lvItem);
             }
@@ -69,7 +69,7 @@ namespace Speiseplan
             {
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
-                //lvItem.SubItems.Add(dr[2].ToString());
+                lvItem.SubItems.Add(dr[2].ToString());
 
                 lvNachspeise.Items.Add(lvItem);
             }
