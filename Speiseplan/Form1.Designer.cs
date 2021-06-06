@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvVorspeise = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.lvHauptspeise = new System.Windows.Forms.ListView();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView3 = new System.Windows.Forms.ListView();
+            this.lvNachspeise = new System.Windows.Forms.ListView();
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,39 +50,39 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listView1
+            // lvVorspeise
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvVorspeise.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnIDVorspeise,
             this.columnVorspeise});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(45, 85);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(358, 522);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lvVorspeise.HideSelection = false;
+            this.lvVorspeise.Location = new System.Drawing.Point(45, 85);
+            this.lvVorspeise.Margin = new System.Windows.Forms.Padding(4);
+            this.lvVorspeise.Name = "lvVorspeise";
+            this.lvVorspeise.Size = new System.Drawing.Size(358, 522);
+            this.lvVorspeise.TabIndex = 0;
+            this.lvVorspeise.UseCompatibleStateImageBehavior = false;
+            this.lvVorspeise.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
             this.columnHeader1.Width = 0;
             // 
-            // listView2
+            // lvHauptspeise
             // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvHauptspeise.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(439, 85);
-            this.listView2.Margin = new System.Windows.Forms.Padding(4);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(367, 522);
-            this.listView2.TabIndex = 1;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
+            this.lvHauptspeise.HideSelection = false;
+            this.lvHauptspeise.Location = new System.Drawing.Point(439, 85);
+            this.lvHauptspeise.Margin = new System.Windows.Forms.Padding(4);
+            this.lvHauptspeise.Name = "lvHauptspeise";
+            this.lvHauptspeise.Size = new System.Drawing.Size(367, 522);
+            this.lvHauptspeise.TabIndex = 1;
+            this.lvHauptspeise.UseCompatibleStateImageBehavior = false;
+            this.lvHauptspeise.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader2
             // 
@@ -97,20 +97,20 @@
             this.columnHeader4.Text = "Hauptspeise";
             this.columnHeader4.Width = 200;
             // 
-            // listView3
+            // lvNachspeise
             // 
-            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvNachspeise.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader8,
             this.columnHeader9,
             this.columnHeader10});
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(844, 85);
-            this.listView3.Margin = new System.Windows.Forms.Padding(4);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(364, 522);
-            this.listView3.TabIndex = 2;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            this.listView3.View = System.Windows.Forms.View.Details;
+            this.lvNachspeise.HideSelection = false;
+            this.lvNachspeise.Location = new System.Drawing.Point(844, 85);
+            this.lvNachspeise.Margin = new System.Windows.Forms.Padding(4);
+            this.lvNachspeise.Name = "lvNachspeise";
+            this.lvNachspeise.Size = new System.Drawing.Size(364, 522);
+            this.lvNachspeise.TabIndex = 2;
+            this.lvNachspeise.UseCompatibleStateImageBehavior = false;
+            this.lvNachspeise.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader8
             // 
@@ -208,9 +208,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listView3);
-            this.Controls.Add(this.listView2);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lvNachspeise);
+            this.Controls.Add(this.lvHauptspeise);
+            this.Controls.Add(this.lvVorspeise);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -226,13 +226,13 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvVorspeise;
         private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView lvHauptspeise;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.ListView lvNachspeise;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
