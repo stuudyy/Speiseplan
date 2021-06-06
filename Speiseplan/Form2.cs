@@ -34,12 +34,16 @@ namespace Speiseplan
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            db = new Datenbank();
         }
 
         private void btnSpeichern_Click(object sender, EventArgs e)
         {
-
+            if (txtID.Text.Equals("") || txtSpeise.Text.Equals(""))
+            {
+                MessageBox.Show("Die Felder dürfen nicht leer sein!");
+                return;
+            }
 
             if (this.Text.Equals("Speise anlegen"))
             {

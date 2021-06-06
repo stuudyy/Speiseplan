@@ -96,6 +96,7 @@ namespace Speiseplan
         {
             Form2 f2 = new Form2();
             f2.Text = "Speise anlegen";
+            f2.txtID.Text = (Datenbank.getStartNr()).ToString();
             f2.ShowDialog();
         }
 
@@ -118,11 +119,102 @@ namespace Speiseplan
                 f2.ShowDialog();
                 einlesenVorspeise();
             }
+            else if (Form1.f1.hauptspeise == true)
+            {
+                if (lvHauptspeise.SelectedItems.Count == 0)
+                {
+                    MessageBox.Show("Wählen Sie bitte eine Speise aus!");
+                    return;
+                }
+                lvItem = lvHauptspeise.SelectedItems[0];
+                Form2 f2 = new Form2();
+                f2.Text = "Speise ändern";
+                f2.txtID.Text = lvItem.SubItems[0].Text;
+                f2.txtSpeise.Text = lvItem.SubItems[1].Text;
+                
 
+                f2.ShowDialog();
+                einlesenHauptspeise();
+            }
+            else if (Form1.f1.nachspeise == true)
+            {
+                if (lvNachspeise.SelectedItems.Count == 0)
+                {
+                    MessageBox.Show("Wählen Sie bitte eine Speise aus!");
+                    return;
+                }
+                lvItem = lvNachspeise.SelectedItems[0];
+                Form2 f2 = new Form2();
+                f2.Text = "Speise ändern";
+                f2.txtID.Text = lvItem.SubItems[0].Text;
+                f2.txtSpeise.Text = lvItem.SubItems[1].Text;
+                
+
+                f2.ShowDialog();
+                einlesenNachspeise();
+            }
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
+
+        }
+
+        private void löschenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int index;
+            int idV;
+            int idH;
+            int idN;
+
+            if (Form1.f1.vorspeise == true)
+            {
+                DialogResult dr = MessageBox.Show("Wollen Sie diese Speise wirklich löschen?", "Achtung!!!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dr == DialogResult.Yes)
+                {
+                    lvItem = lvVorspeise.SelectedItems[0];
+                    index = lvItem.Index;
+                    idV = Convert.ToInt32(lvVorspeise.Items[index].SubItems[0].Text.ToString());
+
+                    lvVorspeise.Items.RemoveAt(index);
+                    sql = "DELETE FROM Vorspeise WHERE VID=" + idV + "";
+                    MessageBox.Show("Die Vorspeise wurde gelöscht!");
+                    db.Ausfuehren(sql);
+                }
+
+
+            }
+            else if (Form1.f1.hauptspeise == true)
+            {
+                DialogResult dr = MessageBox.Show("Wollen Sie diese Speise wirklich löschen?", "Achtung!!!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dr == DialogResult.Yes)
+                {
+                    lvItem = lvHauptspeise.SelectedItems[0];
+                    index = lvItem.Index;
+                    idH = Convert.ToInt32(lvHauptspeise.Items[index].SubItems[0].Text.ToString());
+
+                    lvHauptspeise.Items.RemoveAt(index);
+                    sql = "DELETE FROM Hauptspeise WHERE HID=" + idH + "";
+                    MessageBox.Show("Die Hauptspeise wurde gelöscht!");
+                    db.Ausfuehren(sql);
+                }
+            }
+
+            else if (Form1.f1.nachspeise == true)
+            {
+                DialogResult dr = MessageBox.Show("Wollen Sie diese Speise wirklich löschen?", "Achtung!!!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dr == DialogResult.Yes)
+                {
+                    lvItem = lvNachspeise.SelectedItems[0];
+                    index = lvItem.Index;
+                    idN = Convert.ToInt32(lvNachspeise.Items[index].SubItems[0].Text.ToString());
+
+                    lvNachspeise.Items.RemoveAt(index);
+                    sql = "DELETE FROM Nachspeise WHERE NID=" + idN + "";
+                    MessageBox.Show("Die Nachspeise wurde gelöscht!");
+                    db.Ausfuehren(sql);
+                }
+            }
 
         }
     }

@@ -14,7 +14,7 @@ namespace Speiseplan
         private OleDbConnection verbindung;
         private OleDbCommand cmd;
         private string cn;
-
+        private static int startNr = 11;
 
         public Datenbank()
         {
@@ -55,6 +55,12 @@ namespace Speiseplan
             {
                 verbindung.Close();
             }
+
+            
+        }
+        public static int getStartNr()
+        {
+            return startNr;
         }
     }
 }
