@@ -174,8 +174,8 @@
             // anlegenToolStripMenuItem
             // 
             this.anlegenToolStripMenuItem.Name = "anlegenToolStripMenuItem";
-            this.anlegenToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.anlegenToolStripMenuItem.Text = "Anlegen";
+            this.anlegenToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.anlegenToolStripMenuItem.Text = "Neuanlage";
             this.anlegenToolStripMenuItem.Click += new System.EventHandler(this.anlegenToolStripMenuItem_Click);
             // 
             // bearbeitenToolStripMenuItem
