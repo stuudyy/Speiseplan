@@ -90,7 +90,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(247, 9);
+            this.label4.Location = new System.Drawing.Point(314, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(483, 29);
             this.label4.TabIndex = 3;
@@ -100,7 +100,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(194, 67);
+            this.label5.Location = new System.Drawing.Point(242, 64);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 18);
             this.label5.TabIndex = 4;
@@ -110,7 +110,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(339, 67);
+            this.label6.Location = new System.Drawing.Point(404, 64);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 18);
             this.label6.TabIndex = 5;
@@ -120,7 +120,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(484, 67);
+            this.label7.Location = new System.Drawing.Point(579, 64);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 18);
             this.label7.TabIndex = 6;
@@ -130,7 +130,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(616, 67);
+            this.label8.Location = new System.Drawing.Point(754, 64);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 18);
             this.label8.TabIndex = 7;
@@ -140,7 +140,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(774, 67);
+            this.label9.Location = new System.Drawing.Point(950, 64);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 18);
             this.label9.TabIndex = 8;
@@ -148,113 +148,128 @@
             // 
             // txtVorspeiseMo
             // 
-            this.txtVorspeiseMo.Location = new System.Drawing.Point(180, 118);
+            this.txtVorspeiseMo.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVorspeiseMo.Location = new System.Drawing.Point(205, 118);
             this.txtVorspeiseMo.Name = "txtVorspeiseMo";
-            this.txtVorspeiseMo.Size = new System.Drawing.Size(100, 20);
+            this.txtVorspeiseMo.Size = new System.Drawing.Size(142, 21);
             this.txtVorspeiseMo.TabIndex = 9;
             // 
             // txtVorpeiseDi
             // 
-            this.txtVorpeiseDi.Location = new System.Drawing.Point(326, 118);
+            this.txtVorpeiseDi.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVorpeiseDi.Location = new System.Drawing.Point(383, 118);
             this.txtVorpeiseDi.Name = "txtVorpeiseDi";
-            this.txtVorpeiseDi.Size = new System.Drawing.Size(100, 20);
+            this.txtVorpeiseDi.Size = new System.Drawing.Size(142, 21);
             this.txtVorpeiseDi.TabIndex = 10;
             // 
             // txtVorpeiseMi
             // 
-            this.txtVorpeiseMi.Location = new System.Drawing.Point(472, 118);
+            this.txtVorpeiseMi.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVorpeiseMi.Location = new System.Drawing.Point(555, 118);
             this.txtVorpeiseMi.Name = "txtVorpeiseMi";
-            this.txtVorpeiseMi.Size = new System.Drawing.Size(100, 20);
+            this.txtVorpeiseMi.Size = new System.Drawing.Size(142, 21);
             this.txtVorpeiseMi.TabIndex = 11;
             // 
             // txtVorspeiseDo
             // 
-            this.txtVorspeiseDo.Location = new System.Drawing.Point(618, 118);
+            this.txtVorspeiseDo.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVorspeiseDo.Location = new System.Drawing.Point(735, 118);
             this.txtVorspeiseDo.Name = "txtVorspeiseDo";
-            this.txtVorspeiseDo.Size = new System.Drawing.Size(100, 20);
+            this.txtVorspeiseDo.Size = new System.Drawing.Size(142, 21);
             this.txtVorspeiseDo.TabIndex = 12;
             // 
             // txtVorspeiseFr
             // 
-            this.txtVorspeiseFr.Location = new System.Drawing.Point(764, 118);
+            this.txtVorspeiseFr.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVorspeiseFr.Location = new System.Drawing.Point(917, 118);
             this.txtVorspeiseFr.Name = "txtVorspeiseFr";
-            this.txtVorspeiseFr.Size = new System.Drawing.Size(100, 20);
+            this.txtVorspeiseFr.Size = new System.Drawing.Size(142, 21);
             this.txtVorspeiseFr.TabIndex = 13;
             // 
             // txtHauptspeiseFr
             // 
-            this.txtHauptspeiseFr.Location = new System.Drawing.Point(764, 189);
+            this.txtHauptspeiseFr.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHauptspeiseFr.Location = new System.Drawing.Point(917, 189);
             this.txtHauptspeiseFr.Name = "txtHauptspeiseFr";
-            this.txtHauptspeiseFr.Size = new System.Drawing.Size(100, 20);
+            this.txtHauptspeiseFr.Size = new System.Drawing.Size(142, 21);
             this.txtHauptspeiseFr.TabIndex = 18;
             // 
             // txtHauptspeiseDo
             // 
-            this.txtHauptspeiseDo.Location = new System.Drawing.Point(618, 189);
+            this.txtHauptspeiseDo.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHauptspeiseDo.Location = new System.Drawing.Point(735, 189);
             this.txtHauptspeiseDo.Name = "txtHauptspeiseDo";
-            this.txtHauptspeiseDo.Size = new System.Drawing.Size(100, 20);
+            this.txtHauptspeiseDo.Size = new System.Drawing.Size(142, 21);
             this.txtHauptspeiseDo.TabIndex = 17;
             // 
             // txtHauptspeiseMi
             // 
-            this.txtHauptspeiseMi.Location = new System.Drawing.Point(472, 189);
+            this.txtHauptspeiseMi.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHauptspeiseMi.Location = new System.Drawing.Point(555, 189);
             this.txtHauptspeiseMi.Name = "txtHauptspeiseMi";
-            this.txtHauptspeiseMi.Size = new System.Drawing.Size(100, 20);
+            this.txtHauptspeiseMi.Size = new System.Drawing.Size(142, 21);
             this.txtHauptspeiseMi.TabIndex = 16;
             // 
             // txtHauptspeiseDi
             // 
-            this.txtHauptspeiseDi.Location = new System.Drawing.Point(326, 189);
+            this.txtHauptspeiseDi.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHauptspeiseDi.Location = new System.Drawing.Point(383, 189);
             this.txtHauptspeiseDi.Name = "txtHauptspeiseDi";
-            this.txtHauptspeiseDi.Size = new System.Drawing.Size(100, 20);
+            this.txtHauptspeiseDi.Size = new System.Drawing.Size(142, 21);
             this.txtHauptspeiseDi.TabIndex = 15;
             // 
             // txtHauptspeiseMo
             // 
-            this.txtHauptspeiseMo.Location = new System.Drawing.Point(180, 189);
+            this.txtHauptspeiseMo.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHauptspeiseMo.Location = new System.Drawing.Point(205, 189);
             this.txtHauptspeiseMo.Name = "txtHauptspeiseMo";
-            this.txtHauptspeiseMo.Size = new System.Drawing.Size(100, 20);
+            this.txtHauptspeiseMo.Size = new System.Drawing.Size(142, 21);
             this.txtHauptspeiseMo.TabIndex = 14;
             // 
             // txtNachspeiseFr
             // 
-            this.txtNachspeiseFr.Location = new System.Drawing.Point(764, 260);
+            this.txtNachspeiseFr.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNachspeiseFr.Location = new System.Drawing.Point(917, 260);
             this.txtNachspeiseFr.Name = "txtNachspeiseFr";
-            this.txtNachspeiseFr.Size = new System.Drawing.Size(100, 20);
+            this.txtNachspeiseFr.Size = new System.Drawing.Size(142, 21);
             this.txtNachspeiseFr.TabIndex = 23;
             // 
             // txtNachspeiseDo
             // 
-            this.txtNachspeiseDo.Location = new System.Drawing.Point(618, 260);
+            this.txtNachspeiseDo.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNachspeiseDo.Location = new System.Drawing.Point(735, 260);
             this.txtNachspeiseDo.Name = "txtNachspeiseDo";
-            this.txtNachspeiseDo.Size = new System.Drawing.Size(100, 20);
+            this.txtNachspeiseDo.Size = new System.Drawing.Size(142, 21);
             this.txtNachspeiseDo.TabIndex = 22;
             // 
             // txtNachspeiseMi
             // 
-            this.txtNachspeiseMi.Location = new System.Drawing.Point(472, 260);
+            this.txtNachspeiseMi.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNachspeiseMi.Location = new System.Drawing.Point(555, 260);
             this.txtNachspeiseMi.Name = "txtNachspeiseMi";
-            this.txtNachspeiseMi.Size = new System.Drawing.Size(100, 20);
+            this.txtNachspeiseMi.Size = new System.Drawing.Size(142, 21);
             this.txtNachspeiseMi.TabIndex = 21;
             // 
             // txtNachspeiseDi
             // 
-            this.txtNachspeiseDi.Location = new System.Drawing.Point(326, 260);
+            this.txtNachspeiseDi.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNachspeiseDi.Location = new System.Drawing.Point(383, 260);
             this.txtNachspeiseDi.Name = "txtNachspeiseDi";
-            this.txtNachspeiseDi.Size = new System.Drawing.Size(100, 20);
+            this.txtNachspeiseDi.Size = new System.Drawing.Size(142, 21);
             this.txtNachspeiseDi.TabIndex = 20;
             // 
             // txtNachspeiseMo
             // 
-            this.txtNachspeiseMo.Location = new System.Drawing.Point(180, 260);
+            this.txtNachspeiseMo.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNachspeiseMo.Location = new System.Drawing.Point(205, 260);
             this.txtNachspeiseMo.Name = "txtNachspeiseMo";
-            this.txtNachspeiseMo.Size = new System.Drawing.Size(100, 20);
+            this.txtNachspeiseMo.Size = new System.Drawing.Size(142, 21);
             this.txtNachspeiseMo.TabIndex = 19;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(427, 302);
+            this.button1.Location = new System.Drawing.Point(29, 357);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(206, 50);
             this.button1.TabIndex = 24;
@@ -264,7 +279,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(658, 302);
+            this.button2.Location = new System.Drawing.Point(853, 357);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(206, 50);
             this.button2.TabIndex = 25;
@@ -276,7 +291,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 364);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1081, 419);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtNachspeiseFr);
@@ -305,6 +321,7 @@
             this.Controls.Add(this.label1);
             this.Name = "SpeiseplanZufällig";
             this.Text = "SpeiseplanZufällig";
+            this.Load += new System.EventHandler(this.SpeiseplanZufällig_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

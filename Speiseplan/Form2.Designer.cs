@@ -61,7 +61,7 @@
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(129, 52);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(60, 20);
             this.txtID.TabIndex = 3;
@@ -69,7 +69,7 @@
             // txtSpeise
             // 
             this.txtSpeise.Location = new System.Drawing.Point(129, 87);
-            this.txtSpeise.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSpeise.Margin = new System.Windows.Forms.Padding(2);
             this.txtSpeise.Name = "txtSpeise";
             this.txtSpeise.Size = new System.Drawing.Size(165, 20);
             this.txtSpeise.TabIndex = 4;
@@ -78,18 +78,19 @@
             // 
             this.btnAbbrechen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbbrechen.Location = new System.Drawing.Point(40, 128);
-            this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(2);
             this.btnAbbrechen.Name = "btnAbbrechen";
             this.btnAbbrechen.Size = new System.Drawing.Size(116, 41);
             this.btnAbbrechen.TabIndex = 5;
             this.btnAbbrechen.Text = "Abbrechen";
             this.btnAbbrechen.UseVisualStyleBackColor = true;
+            this.btnAbbrechen.Click += new System.EventHandler(this.btnAbbrechen_Click);
             // 
             // btnSpeichern
             // 
             this.btnSpeichern.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSpeichern.Location = new System.Drawing.Point(177, 128);
-            this.btnSpeichern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSpeichern.Margin = new System.Windows.Forms.Padding(2);
             this.btnSpeichern.Name = "btnSpeichern";
             this.btnSpeichern.Size = new System.Drawing.Size(116, 41);
             this.btnSpeichern.TabIndex = 6;
@@ -101,6 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(345, 214);
             this.Controls.Add(this.btnSpeichern);
             this.Controls.Add(this.btnAbbrechen);
@@ -108,7 +110,7 @@
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);

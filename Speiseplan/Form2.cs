@@ -49,24 +49,21 @@ namespace Speiseplan
             {
                 if (Form1.f1.vorspeise == true)
                 {
-                    sql = "INSERT INTO Vorspeise (VID, Vorspeise, Preis) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text +  "');";
-                    //MessageBox.Show(sql);
+                    sql = "INSERT INTO Vorspeise (VorspeiseID, Vorspeise) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text +  "');";
                     MessageBox.Show("Die Vorspeise wurde gespeichert!");
                     Form1.f1.einlesenVorspeise();
 
                 }
                 else if (Form1.f1.hauptspeise == true)
                 {
-                    sql = "INSERT INTO Hauptspeise (HID, Hauptspeise, Preis) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text + "');";
-                    //MessageBox.Show(sql);
+                    sql = "INSERT INTO Hauptspeise (HauptspeiseID, Hauptspeise) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text + "');";
                     MessageBox.Show("Die Hauptspeise wurde gespeichert!");
                     Form1.f1.einlesenHauptspeise();
                 }
 
                 else if (Form1.f1.nachspeise == true)
                 {
-                    sql = "INSERT INTO Nachspeise (NID, Nachspeise, Preis) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text + "');";
-                    //MessageBox.Show(sql);
+                    sql = "INSERT INTO Nachspeise (NachspeiseID, Nachspeise) VALUES ('" + txtID.Text + "', '" + txtSpeise.Text + "');";
                     MessageBox.Show("Die Nachspeise wurde gespeichert!");
                     Form1.f1.einlesenNachspeise();
                 }
@@ -83,7 +80,7 @@ namespace Speiseplan
                     index = lvItem.Index;
                     vorspeiseId = Convert.ToInt32(Form1.f1.lvVorspeise.Items[index].SubItems[0].Text.ToString());
 
-                    sql = "UPDATE Vorspeise set Vorspeise = '" + txtSpeise.Text + "' WHERE VorspeisenID = " + vorspeiseId;
+                    sql = "UPDATE Vorspeise set Vorspeise = '" + txtSpeise.Text + "' WHERE VorspeiseID = " + vorspeiseId;
                     MessageBox.Show(sql);
                 }
 
@@ -103,7 +100,7 @@ namespace Speiseplan
                     index = lvItem.Index;
                     nachspeiseId = Convert.ToInt32(Form1.f1.lvNachspeise.Items[index].SubItems[0].Text.ToString());
 
-                    sql = "UPDATE Nachspeise set Nachspeise = '" + txtSpeise.Text + "' WHERE NachpseiseID = " + nachspeiseId;
+                    sql = "UPDATE Nachspeise set Nachspeise = '" + txtSpeise.Text + "' WHERE NachspeiseID = " + nachspeiseId;
                     //MessageBox.Show(sql);
                 }
 
@@ -111,6 +108,11 @@ namespace Speiseplan
             db.Ausfuehren(sql);
             this.Close();
         
+        }
+
+        private void btnAbbrechen_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

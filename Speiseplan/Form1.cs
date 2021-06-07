@@ -40,7 +40,6 @@ namespace Speiseplan
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
 
-
                 lvVorspeise.Items.Add(lvItem);
             }
             lvVorspeise.FullRowSelect = true;
@@ -55,7 +54,6 @@ namespace Speiseplan
             {
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
-
 
                 lvHauptspeise.Items.Add(lvItem);
             }
@@ -72,7 +70,6 @@ namespace Speiseplan
                 lvItem = new ListViewItem(dr[0].ToString());
                 lvItem.SubItems.Add(dr[1].ToString());
 
-
                 lvNachspeise.Items.Add(lvItem);
             }
             lvNachspeise.FullRowSelect = true;
@@ -86,11 +83,58 @@ namespace Speiseplan
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Width = 226;
             db = new Datenbank();
             einlesenVorspeise();
             einlesenHauptspeise();
             einlesenNachspeise();
         }
+
+        private void btnVorspeise_Click(object sender, EventArgs e)
+        {
+            this.Width = 642;
+            label1.Visible = true;
+            label2.Visible = false;
+            label3.Visible = false;
+            lvVorspeise.Visible = true;
+            lvHauptspeise.Visible = false;
+            lvNachspeise.Visible = false;
+            einlesenVorspeise();
+            vorspeise = true;
+            hauptspeise = false;
+            nachspeise = false;
+        }
+
+        private void btnHauptspeise_Click(object sender, EventArgs e)
+        {
+            this.Width = 642;
+            label1.Visible = false;
+            label2.Visible = true;
+            label3.Visible = false;
+            lvVorspeise.Visible = false;
+            lvHauptspeise.Visible = true;
+            lvNachspeise.Visible = false;
+            einlesenHauptspeise();
+            vorspeise = false;
+            hauptspeise = true;
+            nachspeise = false;
+        }
+
+        private void btnNachspeise_Click(object sender, EventArgs e)
+        {
+            this.Width = 642;
+            label1.Visible = false;
+            label2.Visible = false;
+            label3.Visible = true;
+            lvVorspeise.Visible = false;
+            lvHauptspeise.Visible = false;
+            lvNachspeise.Visible = true;
+            einlesenNachspeise();
+            vorspeise = false;
+            hauptspeise = false;
+            nachspeise = true;
+        }
+
 
         private void anlegenToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -177,7 +221,7 @@ namespace Speiseplan
                     idV = Convert.ToInt32(lvVorspeise.Items[index].SubItems[0].Text.ToString());
 
                     lvVorspeise.Items.RemoveAt(index);
-                    sql = "DELETE FROM Vorspeise WHERE VID=" + idV + "";
+                    sql = "DELETE FROM Vorspeise WHERE VorspeiseID=" + idV + "";
                     MessageBox.Show("Die Vorspeise wurde gelöscht!");
                     db.Ausfuehren(sql);
                 }
@@ -194,7 +238,7 @@ namespace Speiseplan
                     idH = Convert.ToInt32(lvHauptspeise.Items[index].SubItems[0].Text.ToString());
 
                     lvHauptspeise.Items.RemoveAt(index);
-                    sql = "DELETE FROM Hauptspeise WHERE HID=" + idH + "";
+                    sql = "DELETE FROM Hauptspeise WHERE HauptspeiseID=" + idH + "";
                     MessageBox.Show("Die Hauptspeise wurde gelöscht!");
                     db.Ausfuehren(sql);
                 }
@@ -210,12 +254,29 @@ namespace Speiseplan
                     idN = Convert.ToInt32(lvNachspeise.Items[index].SubItems[0].Text.ToString());
 
                     lvNachspeise.Items.RemoveAt(index);
-                    sql = "DELETE FROM Nachspeise WHERE NID=" + idN + "";
+                    sql = "DELETE FROM Nachspeise WHERE NachspeiseID=" + idN + "";
                     MessageBox.Show("Die Nachspeise wurde gelöscht!");
                     db.Ausfuehren(sql);
                 }
             }
 
+        }
+
+        private void lvHauptspeise_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBeenden_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSpeiseplan_Click(object sender, EventArgs e)
+        {
+            SpeiseplanZufällig f3 = new SpeiseplanZufällig();
+            f3.Text = "Speiseplan der Woche";
+            f3.ShowDialog();
         }
     }
 }
