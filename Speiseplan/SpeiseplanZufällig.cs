@@ -88,5 +88,10 @@ namespace Speiseplan
             db = new Datenbank();
             SpeiseplanRandom();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
